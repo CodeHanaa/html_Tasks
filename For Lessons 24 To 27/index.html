@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>Form Part One</title>
+    </head>
+    <body>
+     <p>التكليف 01</p>
+        <form action="test.py" method="post">
+           <div>
+              <span>Enter your username. It is required. </span>
+              <br>
+              <label>Username:</label>
+              <input type="text" required>
+           </div>
+           <hr>
+           <div>
+              <span>Enter your password.</span>
+              <br>
+              <label>Password:</label>
+              <input type="password">
+            </div>
+            <hr>
+            <div>
+                <span>Enter your mobile number in the format +20100 (234) 123.</span>
+                <br>
+               <label>Mobile:</label>
+               <!--  `pattern` attribute:لتحديد نمط الرقم المحمول في حقل الهاتف المحمول -->
+               <input type="text" pattern="\+[0-9]{4} \([0-9]{3}\) [0-9]{3}" placeholder="+20100 (234) 123">
+            </div>
+            <hr>
+            <div>
+                <span>Enter your email address. It is required.</span>
+                <br>
+                <label>Email:</label>
+                <input type="email" required>
+            </div>
+            <hr>
+            <div>
+                <span>Enter the subject of your message.</span>
+                <br>
+                <label>Subject:</label>
+                <input type="text">
+            </div>
+            <hr>
+            <div>
+                <input type="hidden" value="100">
+                <label>Empty Form</label>
+                <input type="reset" name="Empty Form">
+            </div>
+            <br>
+            <div>
+                <label>Send Data</label>
+                <input type="submit" name="submit">
+            </div>
+        </form> 
+        <hr>
+        <p>التكليف 02</p>
+        <form action="test.py" method="post">
+            <div>
+                <label>Range</label>
+                <input type="range" name="range" min="100" max="500" step="50">
+            </div>
+
+        </form>
+    </body>
+</html>
