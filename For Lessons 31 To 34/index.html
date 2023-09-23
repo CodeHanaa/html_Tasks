@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Part Three</title>
+        <!-- في هذا الكود، تم استخدام الحدث `window.onload` لتنفيذ الكود JavaScript عندما تنتهي عملية تحميل الصفحة. ثم تم استخدام `document.getElementById` لاستهداف حقول الإدخال (input fields) وتعيين القيم الافتراضية المطلوبة.
+        باستخدام هذا الحل، يجب أن تظهر القيم الافتراضية في حقول التاريخ والشهور في المتصفحات التي تدعم  JavaScript. يرجى ملاحظة أنه قد تكون هناك اختلافات في تجربة المستخدم بين المتصفحات المختلفة.-->
+        <script>
+            window.onload = function() {
+              var dateInput = document.getElementById('date');
+              var monthInput = document.getElementById('month');
+              
+              // تعيين القيم الافتراضية
+              dateInput.value = '1982-10-25';
+              monthInput.value = '1982-10';
+            }
+        </script>
+    </head>
+    <body>
+        <p><mark>التكليف 01</mark></p>
+        <form action="" novalidate target="_blank">
+            <div>
+                <label for="">Search</label><br><br>
+                <input type="text" name="Search" placeholder=" Enter A Search Word" autofocus>
+            </div>
+            <br>
+            <div>
+                <label for="">Upload</label><br><br>
+                <input type="file" name=" File">
+            </div>
+            <br>
+            <div>
+                <label for="">URL</label><br><br>
+                <input type="url" name="URL" required>
+            </div>
+            <br>
+            <p><mark>التكليف 02</mark></p>
+            <div>
+                <label for="">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <br>
+            <div>
+                <label for=""> Month</label>
+                <input type="month" name=" month"id="month" >
+            </div>
+            <br>
+            <input type="reset" name="Empty" value="Empty">
+            <input type="submit" name="Save" value="Save">
+        </form>
+        <hr>
+        <p><mark>التكليف 03</mark></p>
+        <pre>
+            Hello Line One
+            Hello Line Two
+            Hello Line Three
+                  Hello Line Four
+        </pre>
+        <hr>
+        <p><mark>التكليف 04</mark></p>
+        <iframe src="https://elzero.org/" frameborder="0" height=" 400px" width="100%"></iframe>
+        <hr>
+        <p><mark>دا كود استخدمته ف التكليف وحابه اطبق عليه واشرحلكم دا استخدمته ف اي </mark></p>
+        <div>
+            <pre>
+                <code>
+                    window.onload = function() {
+                        var dateInput = document.getElementById('date');
+                        var monthInput = document.getElementById('month');
+                        
+                        // تعيين القيم الافتراضية
+                        dateInput.value = '1982-10-25';
+                        monthInput.value = '1982-10';
+                      }
+                </code>
+             </pre>
+            <pre>
+                1. `window.onload = function() { ... }`: هذا يعني أن الكود JavaScript سيتم تنفيذه عندما ينتهي تحميل الصفحة بالكامل. هذا يضمن أن العناصر المستهدفة في الكود موجودة في الصفحة قبل تنفيذ أي عملية عليها.
+    
+                2. `var dateInput = document.getElementById('date');`: هنا نستخدم `document.getElementById` للعثور على عنصر HTML الذي يحمل الـ id "date". هذا العنصر هو حقل الإدخال (input field) للتاريخ.
+                
+                3. `var monthInput = document.getElementById('month');`: هنا نستخدم `document.getElementById` مرة أخرى للعثور على عنصر HTML الذي يحمل الـ id "month". هذا العنصر هو حقل الإدخال (input field) للشهور.
+                
+                4. `dateInput.value = '1982-10-25';`: هذا السطر يعيّن القيمة الافتراضية لحقل التاريخ. نستخدم خاصية `value` لتعيين القيمة المحددة، وفي هذه الحالة هي "1982-10-25".
+                
+                5. `monthInput.value = '1982-10';`: هذا السطر يعيّن القيمة الافتراضية لحقل الشهور. نستخدم خاصية `value` لتعيين القيمة المحددة، وفي هذه الحالة هي "1982-10".
+                
+                باستخدام هذا الكود، ستتم تعيين القيم الافتراضية لحقول التاريخ والشهور عند تحميل الصفحة. يتم ذلك باستهداف العناصر المحددة باستخدام `document.getElementById` وتعيين القيم المطلوبة باستخدام خاصية `value`.
+                  
+            </pre>
+        </div>
+    </body>
+</html>
