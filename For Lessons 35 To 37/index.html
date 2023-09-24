@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><mark>التكليف 01</mark></p>
+    <div>
+        <pre>
+            <ol>
+                <li>لإرسال البيانات عند الضغط على النموذج، يمكن استخدام العنصر "button" (زر) أو "input" بنوع "submit" (إرسال) داخل النموذج.</li>
+                <li>العنصر المناسب ليكون عنوانًا للصفحة الكاملة هو العنصر "h1" (عنوان المستوى الأول).</li>
+                <li>العنصر المناسب ليكون عنوانًا لقسم داخل الصفحة هو العنصر "h2" (عنوان المستوى الثاني) أو "h3" (عنوان المستوى الثالث) وهكذا حسب التسلسل والتهميش الهرمي للعناوين.</li>
+                <li>العنصر المناسب ليحتوي على فقرة نصية هو العنصر "p" (فقرة)</li>
+                <li>لتحديد لغة المحتوى الخاص بصفحتك، يمكنك استخدام العنصر "html" مع السمة "lang" وتعيين قيمة السمة للغة المناسبة. على سبيل المثال:
+                    <p>&lt;html lang=<q>en</q>&gt; &lt;&frasl;html&gt;</p>
+                </li>
+                <li>في عالم الإمكانية، الأفضل أن تكتب "10 to 20" بدلاً من "10 - 20" لتوضيح النطاق بشكل أوضح وأكثر وضوحًا.</li>
+                <li>إذا كان لديك عنصر "div" وترغب في الوصول إليه عند الضغط على زر Tab، يجب تعيين السمة "tabindex" للعنصر "div" وتعيين قيمة "0" لجعله قابلًا للتركيز. على سبيل المثال:
+                    <p>&lt;div tabindex=<q>0</q>&gt; &lt;&frasl;div&gt;</p>
+                </li>
+                <li>ة "ARIA" هي اختصار لـ "Accessible Rich Internet Applications"، وهي مجموعة من المواصفات والسمات التي تساعد في جعل تطبيقات الويب أكثر إمكانية الوصول. تهدف ARIA إلى تحسين تجربة المستخدم للأشخاص ذوي الإعاقة عبر إضافة معلومات إضافية للعناصر والتفاعلات على الصفحة التي لا يمكن توصيلها بواسطة HTML و CSS التقليديين.</li>
+            </ol>
+        </pre>
+    </div>
+    <hr>
+    <p><mark>التكليف 02</mark></p>
+    <div>
+        <ol>
+            <li>
+                للعناصر داخل عنصر "choose-skill":
+                <ul>
+                    <li>قم بإضافة السمة "role" لتحديد دور العنصر وجعله قابلًا للوصول. يمكن استخدام الدور "listbox" لعنصر "choose-skill" والدور "option" للعناصر داخله.</li>
+                    <li>قم بإضافة السمة "aria-selected" للعناصر المحددة لتوضيح حالتها.</li>
+                </ul>
+            </li>
+            <li>للعناصر بنوع العنصر "label":
+                <ul>
+                    <li>قم بإضافة السمة "for" وقم بتعيينها للعنصر المرتبط بها. يمكن أن يكون العنصر المرتبط بها هو العنصر الذي يتم تحديده بواسطة المستخدم.</li>
+                    <li>قم بإضافة السمة "aria-label" وقم بتعيينها للنص الذي يصف العنصر المرتبط بها.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>الشفرة المحدثة ستكون على النحو التالي:</p>
+        <pre>
+            &lt;div class="choose-skill" role="listbox"&gt;
+            &lt;div class="skill" aria-selected="false"&gt;Python&lt;/div&gt;
+            &lt;label for="skill-one"&gt;Skill One&lt;/label&gt;
+            &lt;div class="skill" aria-selected="false"&gt;PHP&lt;/div&gt;
+            &lt;label for="skill-two"&gt;Skill Two&lt;/label&gt;
+            &lt;div class="skill" aria-selected="false"&gt;JavaScript&lt;/div&gt;
+            &lt;label for="skill-three"&gt;Skill Three&lt;/label&gt;
+            &lt;/div&gt;
+              
+            يرجى ملاحظة أنه عند استخدام الأحرف الخاصة الممثلة بواسطة الشخصيات الخاصة، سيتم عرض الأحرف كما هي في النص ولن يتم تفسيرها كأكواد HTML فعلية.
+        </pre>
+    </div>
+</body>
+</html>
